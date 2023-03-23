@@ -1,0 +1,328 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #fff;
+	color: #333;
+	padding: 20px;
+    text-align: center;
+    
+}
+
+img {
+	max-width: 20%;
+	height: auto;
+}
+
+header h1 {
+	margin: 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li a {
+	color: #333;
+	text-decoration: none;
+    font-size: 30px;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+section ul {
+	margin: 0;
+	padding: 0;
+	/*list-style: none;*/
+}
+
+section ul li {
+	margin-bottom: 10px;
+}
+
+section ul li img {
+	max-width: 100%;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	padding
+}
+
+/* Timeline Styles */
+
+
+#timeline {
+	margin-top: 50px;
+	padding: 0;
+	position: relative;
+}
+
+
+
+#timeline:before {
+	content: '';
+	position: absolute;
+	top: 50px;
+	bottom: 0;
+	left: 50%;
+	width: 2px;
+	background-color: #ccc;
+	transform: translateX(-50%);
+}
+
+#timeline ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#timeline li {
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.timeline-content {
+	padding: 20px;
+	background-color: #e5e5e5;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	position: relative;
+}
+
+.timeline-content h3 {
+	margin-top: 0;
+}
+
+.timeline-content h4 {
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.timeline-content p {
+	margin: 10px 0;
+}
+
+.timeline-content img {
+    width: 49.5%;
+}
+
+
+.timeline-content .date-with-image {
+    display: flex;
+    margin-top: 10px;
+}
+
+.timeline-content .date-with-image .date {
+	display: block;
+	font-size: 14px;
+	color: #888;
+	position: absolute;
+	left: -160px;
+	top: 0;
+	width: 150px;
+	text-align: right;
+}
+
+
+.timeline-content .date-with-image img {
+    margin-left: 10px;
+    height: 110px;
+    width: auto;
+    position: absolute;
+	left: -125px;
+	top: 30px;
+}
+
+.timeline-content .subcontent {
+    margin-top: 20px;
+    padding: 20px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
+    overflow: hidden;
+}
+
+.timeline-content .subcontent p {
+	margin-bottom: 5px;
+}
+
+.timeline-content .subcontent img {
+	height: auto;
+    width: 110px;
+    float: left;
+    margin-right: 10px;
+}
+
+.timeline-content .date-with-image .text {
+	display: block;
+	font-size: 14px;
+	color: #333;
+	position: relative;
+	top: 0;
+	text-align: left;
+}
+
+
+
+.timeline-content::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.timeline-content.left {
+	float: left;
+	margin-right: 50px;
+}
+
+.timeline-content.right {
+	float: right;
+	margin-left: 50px;
+}
+
+.timeline-content.left::before {
+	content: '';
+	position: absolute;
+	top: 20px;
+	right: 100%;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-right: 15px solid #f1f1f1;
+	border-bottom: 15px solid transparent;
+}
+
+.timeline-content.right::before {
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 100%;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 15px solid #f1f1f1;
+	border-bottom: 15px solid transparent;
+}
+
+/*Portfolio Section */
+
+#portfolio {
+    /* Add styles for the portfolio section */
+  }
+
+#portfolio ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#portfolio li{
+    border-bottom: 1px solid rgb(103, 98, 98);
+  }
+  
+  .item {
+    height: 100px;
+  }
+  
+  .item img {
+    float: left;
+    margin-right: 10px;
+    height: 90px;
+    width: auto;
+    border-radius: 20px;
+  }
+  
+  .item p {
+    margin: 0;
+    /* Add styles for the text description */
+  }
+  
+  
+
+/* Publication Section */
+.publications {
+    margin: 50px auto;
+    max-width: 800px;
+  }
+  
+  .publication {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .publication:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #333; /* Change the color as desired */
+  }
+  
+  .publication h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 60%;
+  }
+  
+  .publication p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .publication a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .publication a:hover {
+    text-decoration: underline;
+  }
+  
+  .publication .date {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 16px;
+    color: #999;
+  }
+
