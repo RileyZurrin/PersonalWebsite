@@ -78,7 +78,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-	padding
+	padding: 10px;
 }
 
 /* Timeline Styles */
@@ -241,10 +241,6 @@ textarea {
 }
 
 /*Portfolio Section */
-
-#portfolio {
-    /* Add styles for the portfolio section */
-  }
 
 #portfolio ul {
 	list-style: none;
